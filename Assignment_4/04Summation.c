@@ -22,9 +22,10 @@ int SumNonFact(int iNo)
 	}
 	for(i=1;i<iNo;i++)
 	{
-		
+		if(iNo%i!=0)
+		{
 			Sum=Sum+i;
-		
+		}
 	}
 	return Sum;
 }
