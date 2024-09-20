@@ -15,9 +15,8 @@
 #define TRUE 1
 #define FALSE 0
 typedef int BOOL;
+BOOL ChkZero(int iNo);
 BOOL ChkZero(int iNo)
-{
-    BOOL ChkZero(int iNo)
 {
 	int iDigit=0;
 	if(iNo<0)
@@ -34,7 +33,6 @@ BOOL ChkZero(int iNo)
 		iNo=iNo/10;
 	}
 	return FALSE;
-}
 }
 int main()
 {
