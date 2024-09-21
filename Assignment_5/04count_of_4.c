@@ -5,14 +5,14 @@
 //  Output : 1                                                              //
 //  Input : 1018                                                            //
 //  Output : 0                                                              //
-//      Input : 9000                                                        //
-//      Output : 0                                                          //
+//      Input : 94410                                                       //
+//      Output : 2                                                          //
 //  Input : 922432                                                          //
-//  Output : 3                                                              //
+//  Output : 1                                                              //
 //////////////////////////////////////////////////////////////////////////////
 #include<stdio.h>
 #include<conio.h>
-int CountTwo(int iNo)
+int CountFour(int iNo)
 {
     int iDigit=0,iSum=0;
 	if(iNo<0)
@@ -22,7 +22,7 @@ int CountTwo(int iNo)
 	while(iNo>0)
 	{
 		iDigit=iNo%10;
-		if(iDigit==2)
+		if(iDigit==4)
 		{
 			iSum++;
 		}
@@ -38,7 +38,7 @@ int main()
     printf("\n Enter a Number :");
     scanf("%d",&iValue);
 
-    iRet = CountTwo(iValue);
+    iRet = CountFour(iValue);
 
     printf("%d",iRet);
 
