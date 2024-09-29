@@ -14,7 +14,7 @@ int main()
 {
 float fValue1 = 0.0, fValue2 = 0.0;
 double dRet = 0.0;
-printf("\n Enter Wisth :");
+printf("\n Enter Width :");
 scanf("%f",&fValue1);
 printf("\n Enter Height :");
 scanf("%f",&fValue2);
