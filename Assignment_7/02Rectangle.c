@@ -8,7 +8,7 @@
 #include<conio.h>
 double RectArea(float fWidth, float fHeight)
 {
-// Logic
+
 }
 int main()
 {
