@@ -12,7 +12,11 @@
 int KMtoMeter(int );
 int KMtoMeter(int iNo)
 {
-// Logic
+    int Mtr = 0;
+
+    Mtr = iNo * 1000;
+
+    return Mtr;
 }
 int main()
 {
@@ -22,8 +26,8 @@ int main()
         scanf("%d",&iValue);
 
     iRet = KMtoMeter(iValue);
-    
-        printf("\n");
+
+        printf("\n %d Kilometer is %d Meter",iValue,iRet);
 
     getch();
     return 0;
