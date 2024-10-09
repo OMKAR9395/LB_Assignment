@@ -12,15 +12,23 @@
 #include<conio.h>
 double FhtoCs(float fTemp)
 {
-// Logic
+    double Fah=0.0;
+      Fah = (fTemp * 9 / 5) + 32;
+      
+      return Fah;
+
 }
 int main()
 {
 float fValue = 0.0;
 double dRet = 0.0;
-printf("\n Enter temperature in ahrenheit :");
-scanf("%lf",&fValue);
-dRet = FhtoCs(fValue);
-printf("\n ");
-return 0;
+
+    printf("\n Enter temperature in ahrenheit :");
+    scanf("%lf",&fValue);
+
+    dRet = FhtoCs(fValue);
+    printf("\n %.2f Celsius is equal to %.2lf Fahrenheit",fValue,dRet);
+
+    getch();
+    return 0;
 }
