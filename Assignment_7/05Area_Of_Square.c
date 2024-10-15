@@ -31,7 +31,7 @@ double SquareMeter(int iValue)
 
     dRet = SquareMeter(iValue);
 
-    printf("\n Square feet %d is = %ld Squarefeet",iValue,dRet);
+    printf("\n %d Square feet is = %ld Square Meter",iValue,dRet);
 
     getch();
     return 0;
