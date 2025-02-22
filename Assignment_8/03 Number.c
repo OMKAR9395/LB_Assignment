@@ -1,0 +1,48 @@
+/////////////////////////////////////////////////////////////////////////////////////////
+//
+// 	Write a program which accept range from user and 
+//  display all even numbers in between that range.
+//	Input : 23 35
+// 	Output : 24 26 28 30 32 34
+//
+/////////////////////////////////////////////////////////////////////////////////////////
+
+#include <stdio.h>
+int RangeSum(int,int);
+
+int main()
+{
+	int iValue1=0,iValue2=0,iRet=0;
+	
+	printf("Enter Starting number..");
+	scanf("%d",&iValue1);
+	
+	printf("Enter Ending number..");
+	scanf("%d",&iValue2);
+	
+	iRet=RangeSumEven(iValue1,iValue2);
+	printf("Sum %d",iRet);
+	return 0;
+}
+int RangeSumEven(int iStart,int iEnd)
+{
+	int iSum=0;
+	
+	if(iStart<0||iEnd<=0)
+	{
+		printf("You enter negative number");
+		return 0;
+	}
+	
+	if(iStart>iEnd)
+	{
+		printf("You enter wrong input,%d is grater than %d",iStart,iEnd);
+		return 0;
+	}
+
+	for(iStart;iStart<=iEnd;iStart++)
+	{
+		iSum=iSum+iStart;
+	}
+	
+}

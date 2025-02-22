@@ -14,3 +14,33 @@
 //////////////////////////////////////////////////////////////////////////////////////////
 #include<stdio.h>
 #include<conio.h>
+
+void RangeDisplay(int,int);
+
+
+int main()
+{
+	int iValue1=0,iValue2=0;
+	
+	printf("Enter Starting number..");
+	scanf("%d",&iValue1);
+	
+	printf("Enter Ending number..");
+	scanf("%d",&iValue2);
+	
+	RangeDisplay(iValue1,iValue2);
+	return 0;
+}
+void RangeDisplay(int iStart,int iEnd)
+{
+	if(iStart>iEnd)
+	{
+		printf("You enter wrong input,%d is grater than %d",iStart,iEnd);
+		return;
+	}
+
+	for(iStart;iStart<=iEnd;iStart++)
+	{
+		printf("%d\t",iStart);
+	}
+}
