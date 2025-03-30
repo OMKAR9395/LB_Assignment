@@ -26,7 +26,6 @@ int main()
         printf("Enter Element %d : ",iCnt+1);
         scanf("%d",&p[iCnt]);
     }
-
     Display(p,iSize);
 
     free(p);
