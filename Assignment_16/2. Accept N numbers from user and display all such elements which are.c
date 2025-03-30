@@ -27,7 +27,6 @@ int main()
         scanf("%d",&p[iCnt]);
     }
     Display(p,iSize);
-
     free(p);
 
     getch();
