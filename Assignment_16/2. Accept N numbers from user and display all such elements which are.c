@@ -33,7 +33,7 @@ int main()
     return 0;
 }
 
-void Display(int iArr[],int iLength)
+void Display(int* iArr,int iLength)
 {
     int iCnt = 0;
 
