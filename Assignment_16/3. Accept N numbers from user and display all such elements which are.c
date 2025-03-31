@@ -39,7 +39,7 @@ void Display(int iArr[],int iLength)
 
     for(iCnt = 0 ; iCnt < iLength ; iCnt++)
     {
-        if(iArr[iCnt] % 5 == 0)
+        if(iArr[iCnt] % 5 == 0 && iArr[iCnt] % 2 == 0)
         {
             printf("\t%d",iArr[iCnt]);
         }
