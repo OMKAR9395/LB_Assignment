@@ -2,8 +2,19 @@
 #include<conio.h>
 #include<stdlib.h>
 
-int FirstOcc(int[],int,int);
+int LastOcc(int iArr[],int iLength,int iNo)
+{
+    int i = 0 , iLast = -1;
 
+    for( i = 0 ; i < iLength ; ++i)
+    {
+        if(iArr[i] == iNo)
+        {
+            iLast = i;
+        }
+    }
+    return iLast;
+}
 int main()
 {
     int iSize = 0 , iRet = 0, iCnt = 0 , iValue = 0 , *p = NULL;
@@ -29,31 +40,18 @@ int main()
         scanf("%d",&p[iCnt]);
     }
 
-    iRet = FirstOcc(p,iSize,iValue);
+    iRet = LastOcc(p,iSize,iValue);
 
     if( iRet == -1)
     {
-        printf("\nNumber is not Occured .");
+        printf("\n-1\nThere is no such number .");
     }
     else
     {
-        printf("\nNumber is Occurred at index %d.",iRet);
+        printf("\nLast occurrence of number is %d.",iRet);
     }
     free(p);
 
     getch();
     return 0;
-}
-int FirstOcc(int iArr[],int iLength,int iNo)
-{
-    int i = 0;
-
-    for( i = 0 ; i < iLength ; ++i)
-    {
-        if(iArr[i] == iNo)
-        {
-            return i;
-        }
-    }
-    return -1;
 }
