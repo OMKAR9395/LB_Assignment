@@ -1,19 +1,19 @@
-
 #include<stdio.h>
 #include<conio.h>
 #include<stdlib.h>
 
-int Maximum(int iArr[],int iLength)
+int Minimum(int iArr[],int iLength)
 {
-    int i = 0 , iMax = 0;
+    int i = 0 , iMin = 0;
+    iMin = iArr[i];
     for( i = 0 ; i < iLength ; ++i)
     {
-        if(iArr[i] > iMax)
+        if(iArr[i] < iMin)
         {
-            iMax = iArr[i];
+            iMin = iArr[i];
         }
     }
-    return iMax;
+    return iMin;
 }
 int main()
 {
@@ -37,13 +37,12 @@ int main()
         scanf("%d",&p[iCnt]);
     }
 
-    iRet = Maximum(p,iSize);
+    iRet = Minimum(p,iSize);
 
-    printf("\nLargest Number is %d.",iRet);
+    printf("\nSmallest Number is %d.",iRet);
 
     free(p);
 
     getch();
     return 0;
 }
-
