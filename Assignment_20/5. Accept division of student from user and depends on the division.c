@@ -31,10 +31,11 @@ int main()
 
     printf("\nEnter Your Division : ");
     scanf("%c",&cValue);
+    
 
     DisplaySchedule(cValue);
 
-    
+
     getch();
     return 0;
 }
