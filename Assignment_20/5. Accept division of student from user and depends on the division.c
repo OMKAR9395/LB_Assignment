@@ -23,7 +23,6 @@ void DisplaySchedule(char ch)
     {
         printf("\nPlease Enter Correct Division (A-D)!!!");
     }
-    
 }
 
 int main()
