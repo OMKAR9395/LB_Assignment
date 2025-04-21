@@ -26,7 +26,6 @@ void DisplaySchedule(char ch)
     }
 }
 
-
 int main()
 {
     char cValue = '\0';
