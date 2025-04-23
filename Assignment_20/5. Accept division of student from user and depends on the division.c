@@ -1,6 +1,5 @@
 #include<stdio.h>
 #include<conio.h>
-
 void DisplaySchedule(char ch)
 {
     if( ch == 65 || ch == 97)
