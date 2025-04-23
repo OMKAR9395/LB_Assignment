@@ -16,6 +16,7 @@ int CountSmall(char *str)
         i++;
     }
     return iCnt;
+    
 }
 
 int main()
