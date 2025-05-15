@@ -15,11 +15,10 @@ int CountSmall(char *str)
         }
         i++;
     }
-    
+
     return iCnt;
     
 }
-
 int main()
 {
     char cArr[20] = "";
