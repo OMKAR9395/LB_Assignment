@@ -21,6 +21,7 @@ int CountSmall(char *str)
 }
 
 int main()
+
 {
     char cArr[20] = "";
     int iRet = 0;
