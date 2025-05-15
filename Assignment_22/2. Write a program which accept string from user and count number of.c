@@ -3,7 +3,6 @@
 #include<string.h>
 
 int CountSmall(char *str)
-
 {
     int i = 0 , iCnt = 0;
 
