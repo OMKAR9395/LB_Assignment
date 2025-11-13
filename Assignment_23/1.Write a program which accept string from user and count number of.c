@@ -16,6 +16,7 @@ int CountCapital(char* str)
     }
     return iCnt;
 }
+
 int main()
 {
     char cArr[20] = "";
